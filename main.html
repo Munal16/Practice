@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gift for Sneha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-body">
+
+  <!-- Falling Flowers -->
+  <div class="flower-container" id="main-flowers"></div>
+
+  <!-- Gift and Message -->
+  <div class="gift-wrapper">
+    <div class="gift-box">
+      <div class="lid"></div>
+      <div class="box"></div>
+    </div>
+    <div class="birthday-message">Happy Birthday My Love ❤️🎁</div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    // Start flower animation
+    createFlower('main-flowers');
+
+    // Animate gift box and message
+    setInterval(() => {
+      document.querySelector('.gift-box').classList.toggle('open');
+      document.querySelector('.birthday-message').classList.toggle('show');
+    }, 1000);
+  </script>
+</body>
+</html>
